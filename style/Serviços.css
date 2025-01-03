@@ -1,0 +1,274 @@
+.hero {
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section {
+    color: #000000;
+}
+
+.Logo_redes {
+    margin-right: 30px;
+    padding: auto;
+}
+
+.Tamanho_imagens {
+    display: flex;
+    flex-wrap: wrap; /* Permitir quebra de linha quando necessário */
+}
+
+.logo_imagen {
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir quebra de linha quando necessário */
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 1400px;
+}
+
+.text-section, .image-section {
+    flex: 1;
+    padding: 60px;
+    border-bottom: 1px solid #000000; /* Add a right border to create a dividing line */
+}
+
+.image-section {
+    border-right: none;
+}
+
+.image-section img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.Texto_serviços {
+    font-size: 28px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Container_titulo {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Container_texto {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    padding: 10px 10px;
+    background-color: #2f7e4d; /* Cor do botão */
+    color: #fff; /* Cor do texto */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.whatsapp-button img {
+    width: 24px; /* Tamanho da logo */
+    height: 24px; /* Tamanho da logo */
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #20b35c; /* Cor do botão ao passar o mouse */
+}
+
+
+/* Para telas menores que 1200px */
+@media (max-width: 1200px) {
+    .header {
+        padding: 0 200px;
+    }
+
+    .naveg_header {
+        gap: 2em;
+        flex-direction: row;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .container {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        flex-flow: row;
+    }
+}
+
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .hero {
+        height: 30vh; /* Ajustar altura para telas menores */
+    }
+
+    .container {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        flex-flow: row;
+    }
+
+    .text-section, .image-section {
+        padding: 30px; /* Reduzir padding em telas menores */
+        border: none; /* Remover bordas em telas menores */
+    }
+
+    .text-section, .image-section {
+        border-bottom: 1px solid #000000; /* Reintroduzir borda inferior */
+    }
+
+    .logo_imagen {
+        height: 40px; /* Ajustar tamanho das imagens em telas menores */
+    }
+
+    .image-section {
+        width: 40px;
+    }
+
+    .whatsapp-button {
+        width: auto;
+        font: none;
+    }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+    .hero {
+        height: 40vh; /* Ajustar altura para telas menores */
+    }
+
+    .container {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+    }
+
+    .text-section, .image-section {
+        padding: 10px; /* Reduzir padding ainda mais em telas menores */
+    }
+
+    .Container_titulo {
+        font-size: 16px; /* Ajustar tamanho da fonte em telas menores */
+    }
+
+    .Container_texto {
+        font-size: 14px; /* Ajustar tamanho da fonte em telas menores */
+    }
+
+    .logo_imagen {
+        height: 40px; /* Ajustar tamanho das imagens em telas menores */
+    }
+
+    .image-section {
+        width: 40px;
+    }
+
+    .whatsapp-button {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        background-size: 30px 30px, 30px 30px, cover;
+        display: none;
+    }
+}
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .hero {
+        background-size: 30px 30px, 30px 30px, cover;
+        display: none;
+    }
+
+    .content .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .hero {
+        height: 60vh;
+    }
+
+    .content .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+        padding: 30px 10px;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .hero {
+        height: 40vh;
+        padding: 20px 5px;
+    }
+
+    .content {
+        padding: 20px 10px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .content p {
+        font-size: 10px;
+    }
+}
